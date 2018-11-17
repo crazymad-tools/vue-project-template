@@ -18,3 +18,4 @@ selenium-debug.log
 
 # 需要忽略的node依赖
 ./node_modules
+./dist
