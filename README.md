@@ -2,6 +2,11 @@
 
 > vue项目模板
 
+除去vue和webpack之外的依赖：
+- vuex
+- sass-loader
+- node-sass
+
 ## Build Setup
 
 ``` bash
