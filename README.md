@@ -6,6 +6,8 @@
 - vuex
 - sass-loader
 - node-sass
+- webpack-api-mocker
+- axios
 
 ## Build Setup
 
