@@ -1,7 +1,7 @@
 /**
  * @Author: crazy_mad
  * @Date: 2018/11/17 13:22
- * @Description:
+ * @Description: Vuex配置
  */
 import Vue from 'vue'
 import Vuex from 'vuex'

@@ -4,4 +4,8 @@
  * @Description:
  */
 
-export default {}
+export default {
+  UPDATE_COUNT (state, count) {
+    state.count = count
+  }
+}

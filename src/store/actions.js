@@ -4,4 +4,8 @@
  * @Description:
  */
 
-export default {}
+export default {
+  updateCountAction ({commit}, count) {
+    commit('UPDATE_COUNT', count)
+  }
+}
