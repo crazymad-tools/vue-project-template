@@ -21,10 +21,10 @@ export default {
   },
   methods: {
     add () {
-      this.$store.dispatch('updateCountAction', this.count + 1)
+      this.$store.commit('UPDATE_COUNT', this.count + 1)
     },
     reduce () {
-      this.$store.dispatch('updateCountAction', this.count - 1)
+      this.$store.commit('UPDATE_COUNT', this.count - 1)
     }
   }
 }

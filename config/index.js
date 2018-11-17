@@ -40,7 +40,16 @@ module.exports = {
     // https://vue-loader.vuejs.org/en/options.html#cachebusting
     cacheBusting: true,
 
-    cssSourceMap: true
+    cssSourceMap: true,
+
+    backEndServers: {
+      // 图片服务器
+      image: 'http://localhost',
+      // 单点登录服务器
+      sso: 'http://localhost',
+      // 业务服务器
+      service: 'http://localhost'
+    }
   },
 
   build: {
@@ -71,6 +80,15 @@ module.exports = {
     // View the bundle analyzer report after build finishes:
     // `npm run build --report`
     // Set to `true` or `false` to always turn it on or off
-    bundleAnalyzerReport: process.env.npm_config_report
+    bundleAnalyzerReport: process.env.npm_config_report,
+    // 后端服务器地址
+    backEndServers: {
+      // 图片服务器
+      image: 'https://image.crazymad.top',
+      // 单点登录服务器
+      sso: 'https://passport.crazymad.top',
+      // 业务服务器
+      service: 'https://novel.crazymad.top'
+    }
   }
 }

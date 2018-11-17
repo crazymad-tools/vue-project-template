@@ -3,9 +3,14 @@
  * @Date: 2018/11/17 13:22
  * @Description:
  */
+import axios from 'axios'
+import urls from '@/config/url'
 
 export default {
-  updateCountAction ({commit}, count) {
-    commit('UPDATE_COUNT', count)
+  getCount ({commit}, count) {
+    console.log(urls.GET_COUNT)
+    return axios.get(urls.GET_COUNT).then(res => {
+      commit('UPDATE_COUNT', res.data.data)
+    })
   }
 }

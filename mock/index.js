@@ -12,6 +12,11 @@ class JsonResult {
 }
 
 const proxy = {
+  'GET /api/count': {
+    state: 1,
+    message: 'ok',
+    data: 100
+  },
   'POST /api/get': (req, res) => {
     let body = req.body
     if (body !== null) {
